@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Steven Weres Career Goals</title>
+		<link href="Style.css" rel="stylesheet">
+		
+	</head>
+	
+	<body>
+		<header>
+			<!-- Title and Navigation -->
+			<h1>My Career Goals</h1>
+			<nav>
+				<a href="Resume.html"><strong>Resume</strong></a>
+				<a href="Cover%20Letter.html"><strong>Cover Letter</strong></a>
+			</nav>
+		</header>
+		
+		<main>
+			<section>
+			
+				<h2>Where I Started</h2>
+			
+				<video controls width="500">
+				<source src="Army.mov">
+				</video>
+				
+			</section>
+			
+			<section>
+			
+				<h2>Where I Am</h2>
+				
+				<img src="ncino.jpeg" alt="nCino HQ" width="500">
+				
+			</section>
+			
+			<section>
+				<h2>Where I Want to Go</h2>
+				<audio controls>
+					<source src="Microsoft.mp3">
+				</audio>
+				<hr>
+				
+			</section>
+			
+			<section>
+				<!-- Input Form -->
+				<h2>How to Reach Me!</h2>
+				
+				<form action="https://wp.zybooks.com/form-viewer.php" method="POST" enctype="multipart/form-data" target="_blank">
+					
+					<div>
+						<label for="first">First Name:</label>
+						<input type="text" name="first" id="first">
+					</div>
+					
+					<div>
+						<label for="last">Last Name:</label>
+						<input type="text" name="last" id="last">
+					</div>
+					
+					<div>
+						<label for="company">Company Name:</label>
+						<input type="text" name="company" id="company">
+					</div>
+					
+					<div>
+						<label for="email">Email Address:</label>
+						<input type="email" name="email" id="email">
+					</div>
+					
+					<div>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" name="phone" id="phone">
+					</div>
+					
+					<div>
+						<label for="message">Message:</label>
+						<textarea name="message" rows="5" id="message" placeholder="Additional Info"></textarea>
+					</div>
+					
+					<script>
+						function logMessage() {
+						const messageText = document.getElementByID("message").value;
+						console.log("Message entered: ",messageText);
+						}
+					</script>
+					
+					<div>
+						<p>Best time to contact:</p>
+						
+						<input type="radio" name="besttime" value="a.m." id="am">
+						<label for="am">a.m.</label>
+					</div>
+					
+					<p>
+						<input type="radio" name="besttime" value="p.m." id="pm">
+						<label for="pm">p.m.</label>
+					</p>
+					
+					<p>
+						<input type="radio" name="besttime" value="anytime" id="anytime">
+						<label for="anytime">Anytime</label>
+					</p>
+					
+					<p>
+						<select name="contact">
+							<option value="phone">Phone</option>
+							<option value="email">E-Mail</option>
+							<option value="text">Text</option>
+						</select>
+					</p>
+					
+					<input type="submit">
+					
+					
+					
+				</form>
+				
+				
+			</section>
+			
+		</main>
+		
+		<footer>
+		<a href="https://www.ncino.com/our-company">nCino</a>
+		</footer>
+	
+	</body>
